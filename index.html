@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>     
+	<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>    
+	
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href='css/estandarize.css' rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <script type="text/javascript" src='js/jquery.js'></script>
+    <script type="text/javascript" src='js/custom.js'></script>
+	<title>Test Octano</title>
+</head>
+<body>
+     
+    <header>
+    <h1>
+    <a href="index.html"> OCTANO </a>
+    </h1>
+    </header>
+    <div class="big_line_top"></div>
+    
+    <form method="post">
+        <h2> Formulario de registro </h2>
+        <p>Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna.</p>
+        <fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="txtNombre" id="txtNombre" class="required" placeholder="Nombre" />
+        </fieldset>
+        <fieldset>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="txtApellido" id="txtApellido" class="required" placeholder="Apellido" />
+        </fieldset>
+        <fieldset>
+            <label for="nombre">Mail</label>
+            <input type="text" name="txtMail" id="txtMail" class="required" placeholder="Mail" />
+        </fieldset>
+        <fieldset class="multiple">
+            <label for="nombre">Fecha de Nacimiento</label>            
+            <select name="cboMesNacimiento" id="cboMesNacimiento" class="required">
+                <option value="">Mes</option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            <input type="text" name="txtDiaNacimiento" id="txtDiaNacimiento" maxlength="2" max="31" placeholder="Día" class="required" />
+            <input type="text" name="txtAnoNacimiento" id="txtAnoNacimiento" maxlength="2" max="2016" placeholder="Año" class="required" />
+        </fieldset>
+        
+        <fieldset class="field_boton">
+            <input type="submit" name="btnEnviar" id="btnEnviar" value="enviar" />
+        </fieldset>
+        
+        <fieldset>
+            <p class="msg">Por favor complete los campos marcados que son obligatorios</p>
+        </fieldset>
+        
+    </form>
+    
+    <footer></footer>
+</body>		
+</html>
+		

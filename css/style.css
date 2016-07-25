@@ -1,0 +1,349 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/*=================================================================
+header
+==================================================================*/
+header{
+    height: 103px;
+    background: #ff4081;
+    overflow: hidden;
+}
+
+header h1{
+    width: 189px;
+    height: 42px;
+    margin: 32px auto 0;
+}
+
+header a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/logo.png") no-repeat 0 0;
+    text-indent: -99999px;
+}
+/*=================================================================*/
+
+
+.big_line_top{
+    height: 257px;
+    background: #e4007f;
+}
+
+
+form{
+    padding: 40px 60px 40px 72px;
+    width: 600px;
+    height: 360px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;    
+    margin: -122px auto 200px;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    0px 0px 22px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         0px 0px 22px 0px rgba(50, 50, 50, 0.4);
+    overflow: hidden;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity:  0;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   opacity:  0;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity:  0;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   opacity:  0;
+}
+
+
+#txtDiaNacimiento::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity:  1;
+}
+#txtDiaNacimiento:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   opacity:  1;
+}
+#txtDiaNacimiento::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity:  1;
+}
+#txtDiaNacimiento:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   opacity:  1;
+}
+
+
+#txtAnoNacimiento::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity:  1;
+}
+#txtAnoNacimiento:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   opacity:  1;
+}
+#txtAnoNacimiento::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity:  1;
+}
+#txtAnoNacimiento:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   opacity:  1;
+}
+
+form h2{
+    color: #757575;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+form h2.gracias{
+    text-align: center;
+    display: none;
+}
+
+form p{
+    font-size: 12px;
+    color: #99a3b1;
+    line-height: 16px;
+    margin: 0 0 30px 0;
+    padding-right: 20px;
+}
+
+form fieldset{
+    width: 280px;
+    float: left;
+    margin: 0 18px 37px 0;
+}
+
+
+form fieldset label{
+    display: block;
+    font-size: 13px;
+    color: #768082;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+form fieldset .error{
+    border-color: #ff7272;
+}
+
+form fieldset input,
+form fieldset select{
+    width: 90%;
+    height: 41px;
+    border: 2px solid #e3e4e8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 4%;
+    color: #768082;
+}
+
+form fieldset.multiple input{
+    width: 12%;
+}
+
+form fieldset.multiple input#txtDiaNacimiento{
+    margin: 0 7px;
+}
+
+form fieldset.multiple select{
+    width: 136px;
+    height: 46px;
+}
+
+form fieldset input#btnEnviar{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background: #ff4081;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(228, 0, 127, 0.75);
+    -moz-box-shadow:    0px 4px 0px 0px rgba(228, 0, 127, 0.75);
+    box-shadow:         0px 4px 0px 0px rgba(228, 0, 127, 0.75);
+    border: 0px;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+form fieldset input#btnEnviar:active {
+  background-color: #f93f7f;  
+  transform: translateY(2px);
+}
+
+form fieldset p.msg{
+    color: #e00000;
+    display: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+/*=================================================================
+#footer
+==================================================================*/
+footer{
+    height: 57px;
+    background: #212121;
+    border-top: 1px solid #cac7c8;
+}
+
+
+
+
+
+/*=================================================================
+* RESPONSIVO *
+==================================================================*/
+
+/* Tablets < 1024 */
+@media screen and (max-width:1024px) {
+
+form{
+    padding: 36px 36px 0 36px;
+    width: 378px;
+    height: auto;    
+    margin: -147px auto 100px;    
+}
+
+form fieldset{
+    width: 100%;
+} 
+
+form p{
+    padding: 0;
+}
+
+footer{
+    display: none;
+}
+
+}
+
+
+/* Mobile < 480 */
+@media screen and (max-width:480px) {
+    
+.big_line_top{
+    height: 28px;
+    background: rgb(228, 0, 127);
+    background: -moz-linear-gradient(90deg, rgb(228, 0, 127) 50%, rgb(197, 0, 109) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(228, 0, 127) 50%, rgb(197, 0, 109) 100%);
+    background: -o-linear-gradient(90deg, rgb(228, 0, 127) 50%, rgb(197, 0, 109) 100%);
+    background: -ms-linear-gradient(90deg, rgb(228, 0, 127) 50%, rgb(197, 0, 109) 100%);
+    background: linear-gradient(180deg, rgb(228, 0, 127) 50%, rgb(197, 0, 109) 100%);
+
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity:  1;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   opacity:  1;
+}
+
+form{
+    padding:0;
+    width: 100%;
+    margin: 30px auto 0;
+    height: auto;
+    border: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;    
+    -webkit-box-shadow: none;
+    -moz-box-shadow:  none;
+    box-shadow:  none;
+    overflow: hidden;
+}
+
+form h2{
+    font-size: 24px;
+    text-align: center;
+}   
+
+form p{
+    text-align: center;
+}
+
+form fieldset{
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+
+form fieldset.field_boton{
+    width: 100%;
+}
+
+form fieldset input, 
+form fieldset select {
+    display: block;
+    float: left;
+    border: 1px solid #e3e4e8;
+}
+
+form fieldset.multiple input#txtDiaNacimiento {
+    margin: 0;
+}
+
+form fieldset.multiple select {
+    width: 57%;    
+}
+
+form fieldset label{
+    display: none;
+}
+
+form fieldset input#btnEnviar {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background: #ff4081;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(228, 0, 127, 0.75);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(228, 0, 127, 0.75);
+    box-shadow: 0px 4px 0px 0px rgba(228, 0, 127, 0.75);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;    
+    margin: 20px auto 0;
+}
+    
+
+footer{
+    display: block;
+    height: 48px;
+}
+
+}
+
+
